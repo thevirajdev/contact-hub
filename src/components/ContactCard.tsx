@@ -121,7 +121,7 @@ export function ContactCard({ contact, onDelete, isDeleting }: ContactCardProps)
 
   return (
     <Card className="group animate-slide-up hover:shadow-lg transition-all duration-300 border-border/50">
-      <CardContent className="p-5">
+      <CardContent className="p-4 sm:p-5">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1 min-w-0 space-y-3">
             {/* Name */}
@@ -257,7 +257,7 @@ export function ContactCard({ contact, onDelete, isDeleting }: ContactCardProps)
 
       {/* Edit Dialog */}
       <Dialog open={openEdit} onOpenChange={setOpenEdit}>
-        <DialogContent className="max-h-[85vh] overflow-y-auto">
+        <DialogContent className="max-h-[85vh] overflow-y-auto w-[95vw] sm:w-auto sm:max-w-lg">
           <DialogHeader>
             <DialogTitle>Edit Contact</DialogTitle>
           </DialogHeader>
@@ -332,7 +332,7 @@ export function ContactCard({ contact, onDelete, isDeleting }: ContactCardProps)
 
       {/* Image Preview Dialog */}
       <Dialog open={openPreview} onOpenChange={setOpenPreview}>
-        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+        <DialogContent className="w-[95vw] sm:max-w-2xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2"><Maximize2 className="h-4 w-4" /> Profile Photo</DialogTitle>
           </DialogHeader>

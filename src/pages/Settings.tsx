@@ -37,7 +37,7 @@ const Settings = () => {
       <div className="min-h-screen bg-background">
         {/* Header */}
         <header className="border-b border-border/50 bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-          <div className="container mx-auto px-4 py-4">
+          <div className="container mx-auto px-4 py-3 sm:py-4">
             <div className="flex items-center gap-4">
               <Button
                 variant="ghost"
@@ -55,10 +55,10 @@ const Settings = () => {
         </header>
 
         {/* Main Content */}
-        <main className="container mx-auto px-4 py-8 max-w-2xl">
+        <main className="container mx-auto px-4 py-6 sm:py-8 max-w-2xl">
           <div className="space-y-4">
             {/* Account Section */}
-            <div className="bg-card rounded-xl border border-border/50 p-6 shadow-lg animate-slide-up">
+            <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 shadow-lg animate-slide-up">
               <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
                 <User className="h-5 w-5 text-accent" />
                 Account
@@ -82,7 +82,7 @@ const Settings = () => {
             </div>
 
             {/* Appearance Section */}
-            <div className="bg-card rounded-xl border border-border/50 p-6 shadow-lg animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 shadow-lg animate-slide-up" style={{ animationDelay: "0.1s" }}>
               <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
                 {isDark ? <Moon className="h-5 w-5 text-accent" /> : <Sun className="h-5 w-5 text-accent" />}
                 Appearance
@@ -105,7 +105,7 @@ const Settings = () => {
             </div>
 
             {/* Security Section */}
-            <div className="bg-card rounded-xl border border-border/50 p-6 shadow-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 shadow-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
                 <Shield className="h-5 w-5 text-accent" />
                 Security

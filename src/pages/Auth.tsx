@@ -194,7 +194,7 @@ const Auth = () => {
       <div className="min-h-screen bg-background flex flex-col">
         {/* Header */}
         <header className="border-b border-border/50 bg-card/50 backdrop-blur-sm">
-          <div className="container mx-auto px-4 py-4">
+          <div className="container mx-auto px-4 py-3 sm:py-4">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-accent-foreground shadow-md">
                 <BookUser className="h-5 w-5" />
@@ -210,7 +210,7 @@ const Auth = () => {
         {/* Auth Form */}
         <main className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-md">
-            <div className="bg-card rounded-xl border border-border/50 p-8 shadow-lg animate-slide-up">
+            <div className="bg-card rounded-xl border border-border/50 p-6 sm:p-8 shadow-lg animate-slide-up">
               {/* OTP Verification Step */}
               {!isLogin && authStep === "verify-otp" ? (
                 <>

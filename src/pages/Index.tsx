@@ -39,7 +39,7 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         {/* Header */}
         <header className="border-b border-border/50 bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-          <div className="container mx-auto px-4 py-4">
+          <div className="container mx-auto px-4 py-3 sm:py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-accent-foreground shadow-md">
@@ -66,11 +66,11 @@ const Index = () => {
         </header>
 
         {/* Main Content */}
-        <main className="container mx-auto px-4 py-8">
-          <div className="grid lg:grid-cols-5 gap-8">
+        <main className="container mx-auto px-4 py-6 sm:py-8">
+          <div className="grid lg:grid-cols-5 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <div className="sticky top-24">
-                <div className="bg-card rounded-xl border border-border/50 p-6 shadow-lg">
+                <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 shadow-lg">
                   <h2 className="font-display text-lg font-semibold text-foreground mb-1">Add New Contact</h2>
                   <p className="text-sm text-muted-foreground mb-6">Fill in the details to save a new contact.</p>
                   <ContactForm onSubmit={async (data) => { await addContact(data); }} isSubmitting={isAddingContact} />
@@ -78,7 +78,7 @@ const Index = () => {
               </div>
             </div>
             <div className="lg:col-span-3">
-              <div className="bg-card rounded-xl border border-border/50 p-6 shadow-lg">
+              <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 shadow-lg">
                 <h2 className="font-display text-lg font-semibold text-foreground mb-6">Your Contacts</h2>
                 {isLoading ? (
                   <div className="flex flex-col items-center justify-center py-16">

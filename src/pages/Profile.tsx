@@ -100,7 +100,7 @@ const Profile = () => {
       <div className="min-h-screen bg-background">
         {/* Header */}
         <header className="border-b border-border/50 bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-          <div className="container mx-auto px-4 py-4">
+          <div className="container mx-auto px-4 py-3 sm:py-4">
             <div className="flex items-center gap-4">
               <Button
                 variant="ghost"
@@ -118,8 +118,8 @@ const Profile = () => {
         </header>
 
         {/* Main Content */}
-        <main className="container mx-auto px-4 py-8 max-w-2xl">
-          <div className="bg-card rounded-xl border border-border/50 p-6 shadow-lg animate-slide-up">
+        <main className="container mx-auto px-4 py-6 sm:py-8 max-w-2xl">
+          <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 shadow-lg animate-slide-up">
             {/* Avatar Section */}
             <div className="flex flex-col items-center mb-8">
               <div className="relative">
